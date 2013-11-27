@@ -1,0 +1,7 @@
+1. Fix System.UnauthorizedAccessException: Access to the registry key 'HKEY_LOCAL_MACHINE\Software\Red Gate\SIPFramework\Plugins' is denied. error when the problem is that the Red Gate key doesn't exist.
+1a. Even if the key is there, it gives an error in the log.  Seems this is a 32/64-bit registry location problem.
+1b. Documentation is not clear on how to create the plugin registry key.
+2. Fix signing key points to internal RedGate shared drive.
+3. Make it easier to register the DLL.
+4. Fix readme.
+5. Fix strange .. build path on sample extension.
